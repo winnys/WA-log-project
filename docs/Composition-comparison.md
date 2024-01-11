@@ -99,8 +99,9 @@ composition. First, I look at how well initial treatment and block
 jointly describe variation in community composition using an rda
 analysis.
 
-<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html> Main
-takeaways:
+<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html>
+
+Main takeaways:
 
 - Constrained proportion: variance of community composition explained by
   initial treatment + block is 73.87%.
@@ -316,7 +317,7 @@ anova.cca(trt_tot_2, step=1000, by="term") ## test for model significance
     ## 
     ## Model: rda(formula = ass.rel.t012 ~ init + block)
     ##          Df Variance      F Pr(>F)    
-    ## init      1 0.042400 2.5694  0.003 ** 
+    ## init      1 0.042400 2.5694  0.004 ** 
     ## block     6 0.237577 2.3995  0.001 ***
     ## Residual  6 0.099013                  
     ## ---
@@ -555,8 +556,9 @@ plot:
 Composition of transects from all three years affected only by log and
 open condition.
 
-<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html> Main
-takeaways:
+<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html>
+
+Main takeaways:
 
 - Constrained proportion: variance of community composition explained by
   initial treatment + block is 73.96%.
@@ -771,7 +773,7 @@ anova.cca(trt_tot_2, step=1000, by="term") ## test for model significance
     ## 
     ## Model: rda(formula = ass.rel.t012 ~ init + block)
     ##          Df Variance      F Pr(>F)    
-    ## init      1 0.042369 2.5806  0.007 ** 
+    ## init      1 0.042369 2.5806  0.010 ** 
     ## block     6 0.237455 2.4105  0.001 ***
     ## Residual  6 0.098509                  
     ## ---
@@ -990,7 +992,7 @@ improves model performance in describing variation in plot diversity.
     ## 
     ## Model: rda(X = ass.rel.t012, Y = init, Z = block)
     ##          Df Variance      F Pr(>F)  
-    ## Model     1 0.042369 2.5806  0.033 *
+    ## Model     1 0.042369 2.5806  0.027 *
     ## Residual  6 0.098509                
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -1156,58 +1158,52 @@ ass.rel.t012_NMS <- metaMDS(ass.rel.t012, distance = 'bray', k = 5) # run MDS
 ```
 
     ## Run 0 stress 0.09244924 
-    ## Run 1 stress 0.09245328 
-    ## ... Procrustes: rmse 0.001269691  max resid 0.00509669 
+    ## Run 1 stress 0.09245 
+    ## ... Procrustes: rmse 0.0008571154  max resid 0.003565469 
     ## ... Similar to previous best
-    ## Run 2 stress 0.09527066 
-    ## Run 3 stress 0.09247556 
-    ## ... Procrustes: rmse 0.00183254  max resid 0.006407168 
+    ## Run 2 stress 0.09245005 
+    ## ... Procrustes: rmse 0.0009234277  max resid 0.00386566 
     ## ... Similar to previous best
-    ## Run 4 stress 0.09244973 
-    ## ... Procrustes: rmse 0.0008329164  max resid 0.003291102 
+    ## Run 3 stress 0.09244983 
+    ## ... Procrustes: rmse 0.0003658703  max resid 0.001449076 
     ## ... Similar to previous best
-    ## Run 5 stress 0.09245005 
-    ## ... Procrustes: rmse 0.000452252  max resid 0.001679983 
+    ## Run 4 stress 0.09245027 
+    ## ... Procrustes: rmse 0.0004913347  max resid 0.001879946 
     ## ... Similar to previous best
-    ## Run 6 stress 0.09244961 
-    ## ... Procrustes: rmse 0.0007793846  max resid 0.003092454 
+    ## Run 5 stress 0.1000161 
+    ## Run 6 stress 0.09634241 
+    ## Run 7 stress 0.09855959 
+    ## Run 8 stress 0.0927126 
+    ## ... Procrustes: rmse 0.01178109  max resid 0.04676429 
+    ## Run 9 stress 0.09244988 
+    ## ... Procrustes: rmse 0.0009001708  max resid 0.003599119 
     ## ... Similar to previous best
-    ## Run 7 stress 0.09245457 
-    ## ... Procrustes: rmse 0.001503858  max resid 0.005995821 
+    ## Run 10 stress 0.0924542 
+    ## ... Procrustes: rmse 0.001432045  max resid 0.005749117 
     ## ... Similar to previous best
-    ## Run 8 stress 0.09942392 
-    ## Run 9 stress 0.09245028 
-    ## ... Procrustes: rmse 0.0005009741  max resid 0.00199318 
+    ## Run 11 stress 0.09244934 
+    ## ... Procrustes: rmse 9.385368e-05  max resid 0.0003658337 
     ## ... Similar to previous best
-    ## Run 10 stress 0.09244955 
-    ## ... Procrustes: rmse 0.0002312963  max resid 0.0009323741 
+    ## Run 12 stress 0.09244971 
+    ## ... Procrustes: rmse 0.0008231452  max resid 0.003202484 
     ## ... Similar to previous best
-    ## Run 11 stress 0.09269091 
-    ## ... Procrustes: rmse 0.00889586  max resid 0.03000558 
-    ## Run 12 stress 0.0924504 
-    ## ... Procrustes: rmse 0.0005737968  max resid 0.002337841 
+    ## Run 13 stress 0.09989409 
+    ## Run 14 stress 0.09801564 
+    ## Run 15 stress 0.09245012 
+    ## ... Procrustes: rmse 0.0009571444  max resid 0.003775281 
     ## ... Similar to previous best
-    ## Run 13 stress 0.09245126 
-    ## ... Procrustes: rmse 0.0008110853  max resid 0.003143472 
+    ## Run 16 stress 0.09254453 
+    ## ... Procrustes: rmse 0.007458469  max resid 0.02848512 
+    ## Run 17 stress 0.09245199 
+    ## ... Procrustes: rmse 0.0008112156  max resid 0.003226258 
     ## ... Similar to previous best
-    ## Run 14 stress 0.09931221 
-    ## Run 15 stress 0.09617675 
-    ## Run 16 stress 0.09245022 
-    ## ... Procrustes: rmse 0.0005157656  max resid 0.002076034 
+    ## Run 18 stress 0.1000547 
+    ## Run 19 stress 0.09260682 
+    ## ... Procrustes: rmse 0.008203471  max resid 0.02812101 
+    ## Run 20 stress 0.09245286 
+    ## ... Procrustes: rmse 0.001185523  max resid 0.004724363 
     ## ... Similar to previous best
-    ## Run 17 stress 0.09245034 
-    ## ... Procrustes: rmse 0.001045581  max resid 0.004233374 
-    ## ... Similar to previous best
-    ## Run 18 stress 0.09244992 
-    ## ... Procrustes: rmse 0.0004064337  max resid 0.001621879 
-    ## ... Similar to previous best
-    ## Run 19 stress 0.09245008 
-    ## ... Procrustes: rmse 0.0004651743  max resid 0.001853583 
-    ## ... Similar to previous best
-    ## Run 20 stress 0.09244959 
-    ## ... Procrustes: rmse 0.0007323154  max resid 0.002867448 
-    ## ... Similar to previous best
-    ## *** Best solution repeated 15 times
+    ## *** Best solution repeated 11 times
 
 ``` r
 stressplot(ass.rel.t012_NMS) # check fit
@@ -1229,8 +1225,9 @@ block<-as.factor(group_block) # grouping factor 2- convert to factor
 time<-as.factor(group_time)
 ```
 
-<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html> Main
-takeaways:
+<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html>
+
+Main takeaways:
 
 - Constrained proportion: variance of community composition explained by
   initial treatment + block + time is 50.31%.
@@ -1859,10 +1856,11 @@ ggplot()+
 
 ![](Composition-comparison_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
 
-Looking at everything by year \### 4. rda: composition dissimilarity t0
+Looking at everything by year
 
-<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html> Main
-takeaways:
+### 4. rda: composition dissimilarity t0
+
+Main takeaways:
 
 - Constrained proportion: variance of community composition explained by
   initial treatment + block is 77.38%.
@@ -2078,7 +2076,7 @@ anova.cca(trt_tot_2, step=1000, by="term") ## test for model significance
     ## 
     ## Model: rda(formula = ass.rel.t0 ~ init + block)
     ##          Df Variance      F Pr(>F)    
-    ## init      1 0.035514 2.2097  0.017 *  
+    ## init      1 0.035514 2.2097  0.015 *  
     ## block     6 0.294294 3.0519  0.001 ***
     ## Residual  6 0.096430                  
     ## ---
@@ -2269,7 +2267,7 @@ mtext("X1= Treatment; X2=Block", side=3)
     ## 
     ## Model: rda(X = ass.rel.t0, Y = init, Z = block)
     ##          Df Variance      F Pr(>F)  
-    ## Model     1 0.035514 2.2097  0.043 *
+    ## Model     1 0.035514 2.2097  0.056 .
     ## Residual  6 0.096430                
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -2278,8 +2276,7 @@ mtext("X1= Treatment; X2=Block", side=3)
 
 ### 5. rda: composition dissimilarity t1
 
-<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html> Main
-takeaways:
+Main takeaways:
 
 - Constrained proportion: variance of community composition explained by
   initial treatment + block is 65.82%.
@@ -2686,7 +2683,7 @@ mtext("X1= Treatment; X2=Block", side=3)
     ## 
     ## Model: rda(X = ass.rel.t1, Y = init, Z = block)
     ##          Df Variance     F Pr(>F)  
-    ## Model     1 0.064359 2.121  0.041 *
+    ## Model     1 0.064359 2.121  0.048 *
     ## Residual  6 0.182059               
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -2695,8 +2692,7 @@ mtext("X1= Treatment; X2=Block", side=3)
 
 ### 6. rda: composition dissimilarity t2
 
-<https://r.qcbs.ca/workshop10/book-en/redundancy-analysis.html> Main
-takeaways:
+Main takeaways:
 
 - Constrained proportion: variance of community composition explained by
   initial treatment + block is 67.05%.
@@ -2911,10 +2907,10 @@ anova.cca(trt_tot_2, step=1000, by="term") ## test for model significance
     ## Number of permutations: 999
     ## 
     ## Model: rda(formula = ass.rel.t2 ~ init + block)
-    ##          Df Variance      F Pr(>F)    
-    ## init      1  0.06081 2.0739  0.019 *  
-    ## block     6  0.29726 1.6897  0.001 ***
-    ## Residual  6  0.17593                  
+    ##          Df Variance      F Pr(>F)   
+    ## init      1  0.06081 2.0739  0.013 * 
+    ## block     6  0.29726 1.6897  0.004 **
+    ## Residual  6  0.17593                 
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
