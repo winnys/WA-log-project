@@ -4,7 +4,7 @@ Winnie Siu
 2023-12-07
 
 ``` r
-knitr::include_graphics("docs/Abundance-comparison_files/figure-gfm/Openlog1.png")
+![](docs/Abundance-comparison_files/figure-gfm/Openlog1.png)   
 ```
 
 <img src="Openlog1.png" width="80%" style="display: block; margin: auto;" />
