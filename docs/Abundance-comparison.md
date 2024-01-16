@@ -4,7 +4,7 @@ Winnie Siu
 2023-12-07
 
 ``` r
-![Field image](figure-gfm/Openlog1.png)   
+![Field image](https://github.com/winnys/WA-log-project/blob/main/docs/Abundance-comparison_files/figure-gfm/Openlog1.png)   
 ```
 
 <img src="Openlog1.png" width="80%" style="display: block; margin: auto;" />
