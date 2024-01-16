@@ -5,11 +5,7 @@ Winnie Siu
 
 ![Field image](https://github.com/winnys/WA-log-project/blob/main/docs/Abundance-comparison_files/figure-gfm/Openlog1.png)   
 
-``` r
-knitr::include_graphics("docs/Abundance-comparison_files/figure-gfm/Openlog2.png")
-```
-
-<img src="Openlog2.png" width="80%" style="display: block; margin: auto;" />
+![Field image](https://github.com/winnys/WA-log-project/blob/main/docs/Abundance-comparison_files/figure-gfm/Openlog2.png)   
 
 ### Data wrangling
 
