@@ -3,6 +3,18 @@ Abundance comparison
 Winnie Siu
 2023-12-07
 
+``` r
+knitr::include_graphics("Abundance-comparison_files/figure-gfm/Openlog1.png")
+```
+
+<img src="Openlog1.png" width="80%" style="display: block; margin: auto;" />
+
+``` r
+knitr::include_graphics("Abundance-comparison_files/figure-gfm/Openlog2.png")
+```
+
+<img src="Openlog2.png" width="80%" style="display: block; margin: auto;" />
+
 ### Data wrangling
 
 This dataset includes unknown species.
@@ -227,7 +239,7 @@ range(dat$total)
 hist(nublock$total, xlab="Abundance", ylab="Frequency", main="")
 ```
 
-![](Abundance-comparison_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](Abundance-comparison_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 ggplot(nublock, aes(x = total, fill = as.factor(init))) +
@@ -238,7 +250,7 @@ ggplot(nublock, aes(x = total, fill = as.factor(init))) +
   theme_classic()
 ```
 
-![](Abundance-comparison_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->
+![](Abundance-comparison_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
 
 ``` r
 ## using poisson. including random effects throws is.Singular error: see ?is.Singular for details
@@ -320,7 +332,7 @@ emmeans(abun.mod, ~init, type='response')
 emmip(abun.mod, ~init, type='response', CI=T)+theme_bw()+labs(x="Initial condition", y="Number of plants")
 ```
 
-![](Abundance-comparison_files/figure-gfm/unnamed-chunk-10-3.png)<!-- -->
+![](Abundance-comparison_files/figure-gfm/unnamed-chunk-11-3.png)<!-- -->
 
 ``` r
 # can also look at presence absence but it's really only a few zeros - no significant difference here.
@@ -402,7 +414,7 @@ emmeans(abun.mod3, ~init, type='response')
 emmip(abun.mod3, ~init, type='response', CI=T)+theme_bw()+labs(x="Initial condition", y="Number of plants")
 ```
 
-![](Abundance-comparison_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](Abundance-comparison_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 ``` r
 # can also look at presence absence but it's really only a few zeros - no significant difference here.
@@ -426,7 +438,7 @@ emmeans(abun.mod5, ~init, type='response') # plant abundance in log plots is hig
 emmip(abun.mod5, ~init, type='response', CI=T)+theme_bw()+labs(x="Initial condition", y="Number of plants")
 ```
 
-![](Abundance-comparison_files/figure-gfm/unnamed-chunk-13-2.png)<!-- -->
+![](Abundance-comparison_files/figure-gfm/unnamed-chunk-14-2.png)<!-- -->
 
 ``` r
 # the following is a logical process to explain why we need to include 'time' as random effect
@@ -456,4 +468,4 @@ ggplot(dat_t0_insitu, aes(x = as.factor(init), y = total, fill = as.factor(init)
   stat_compare_means(comparisons = list(c("log", "open")), label = "p.format", method="wilcox.test")
 ```
 
-![](Abundance-comparison_files/figure-gfm/unnamed-chunk-13-3.png)<!-- -->
+![](Abundance-comparison_files/figure-gfm/unnamed-chunk-14-3.png)<!-- -->
