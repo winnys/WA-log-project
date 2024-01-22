@@ -645,6 +645,8 @@ Main takeaways:
   as random terms
 - we assume approximal Gaussian distribution (1) continuous variable
   and (2) visual inspection suggests so
+- in the lmer, we included block and time as random terms
+- open and log environment is significant in explaining the plant diversity in transect levels.
 
 ``` r
 # separate into zero and non-zero observations
