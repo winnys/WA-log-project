@@ -357,12 +357,12 @@ Main takeaways:
   treatment (11.19%).
 - Unconstrained: unexplained variance in plant composition is 26.13%.
 - This model explains 12.69% of the variation in plant species
-  composition. It is also statistically significant (p = 0.024).
+  composition. It is also statistically significant (p = 0.027).
 
 We can test if the contribution of initial treatment is significant
 using partial redundancy analysis. see `?rda` for details. Despite only
 explaining about 11.19% of variation, the contribution of initial
-treatment (open / log) is significant (p-value sits around 0.024).
+treatment (open / log) is significant (p-value sits around 0.027).
 Knowing if the initial plot was log or open therefore significantly
 improves model performance in describing variation in plot diversity.
 
@@ -806,14 +806,14 @@ Main takeaways:
   (62.76%).
 - Constrained: variance in plant composition explained by initial
   treatment (11.20%).
-- Unconstrained: unexplained variance in plant composition is 26.13%.
+- Unconstrained: unexplained variance in plant composition is 26.04%.
 - This model explains 12.69% of the variation in plant species
-  composition. It is also statistically significant (p = 0.024).
+  composition. It is also statistically significant (p = 0.027).
 
 We can test if the contribution of initial treatment is significant
 using partial redundancy analysis. see `?rda` for details. Despite only
 explaining about 11.19% of variation, the contribution of initial
-treatment (open / log) is significant (p-value sits around 0.05).
+treatment (open / log) is significant (p-value sits around 0.027).
 Knowing if the initial plot was log or open therefore significantly
 improves model performance in describing variation in plot diversity.
 
