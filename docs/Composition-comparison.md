@@ -362,7 +362,7 @@ Main takeaways:
 We can test if the contribution of initial treatment is significant
 using partial redundancy analysis. see `?rda` for details. Despite only
 explaining about 11.19% of variation, the contribution of initial
-treatment (open / log) is significant (p-value sits around 0.05).
+treatment (open / log) is significant (p-value sits around 0.024).
 Knowing if the initial plot was log or open therefore significantly
 improves model performance in describing variation in plot diversity.
 
